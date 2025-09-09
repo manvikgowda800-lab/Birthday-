@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday Talkative Tangiii 💖♾️</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #ff758c, #ff7eb3);
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      text-align: center;
+      color: #fff;
+      overflow: hidden;
+    }
+    h1 {
+      font-size: 3em;
+      text-shadow: 0 0 20px #ff0, 0 0 30px #ff1493, 0 0 40px #ff69b4;
+      animation: glow 2s infinite alternate;
+    }
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #ff0, 0 0 20px #ff69b4; }
+      to { text-shadow: 0 0 20px #00ffff, 0 0 40px #ff1493; }
+    }
+    .photo {
+      margin: 20px auto;
+    }
+    img {
+      border-radius: 20px;
+      width: 300px;
+      border: 5px solid white;
+      box-shadow: 0 0 30px #ff1493;
+    }
+    .lyrics {
+      margin: 30px auto;
+      font-size: 1.4em;
+      line-height: 1.6em;
+      background: rgba(255,255,255,0.15);
+      padding: 20px;
+      border-radius: 20px;
+      width: 80%;
+      box-shadow: 0 0 15px #ffccff;
+      height: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .lyrics span {
+      display: none;
+      animation: fadein 2s ease-in;
+    }
+    @keyframes fadein {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .song {
+      margin-top: 20px;
+      font-size: 1.1em;
+      background: rgba(255,255,255,0.2);
+      padding: 10px;
+      border-radius: 15px;
+      display: inline-block;
+    }
+    .song a {
+      color: yellow;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎉 Happy Birthday Talkative Tangiii 💖♾️ 🎉</h1>
+  <div class="photo">
+    <img src="1000003653.jpg" alt="Sister Photo">
+  </div>
+  
+  <div class="lyrics" id="lyricsBox">
+    <span>🌸 A song of courage and love... 🌸</span>
+    <span>💓 Heartbeats rising like rhythm of victory... 💓</span>
+    <span>🌟 A bond unshaken, a spirit unbroken... 🌟</span>
+    <span>🔥 Every step forward, filled with power and hope... 🔥</span>
+    <span>💖 Just like you, Tangiii — strong, radiant, unstoppable! 💖</span>
+  </div>
+
+  <p class="song">
+    🎶 Full Song Reference: 
+    <a href="https://www.youtube.com/watch?v=fqkg6z1OBeA" target="_blank">
+      Rathathin Rathamey - Velayudham
+    </a>
+  </p>
+
+  <h2>💝 Lots of Love & Happiness Always 💝</h2>
+
+  <script>
+    // Karaoke-style animation
+    const lines = document.querySelectorAll("#lyricsBox span");
+    let index = 0;
+
+    function showLine() {
+      if (index > 0) lines[index - 1].style.display = "none"; 
+      if (index < lines.length) {
+        lines[index].style.display = "inline";
+        index++;
+        setTimeout(showLine, 5000); // 5 sec each line (≈30 sec total)
+      }
+    }
+
+    showLine();
+  </script>
+</body>
+</html>
